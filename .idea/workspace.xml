@@ -2,62 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="init project">
-      <change afterPath="$PROJECT_DIR$/src/Styles/main-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/AnswerCell/AnswerCell.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/AnswerCell/AnswerCell.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/AnswerCell/AnswerCell.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/AnswerCell/__snapshots__/AnswerCell.test.tsx.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/AnswerCell/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/Button/Button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/Button/Button.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/Button/Button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/Button/__snapshots__/Button.test.tsx.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/Button/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/MoneyCell/MoneyCell.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/MoneyCell/MoneyCell.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/MoneyCell/MoneyCell.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/MoneyCell/__snapshots__/MoneyCell.test.tsx.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponents/MoneyCell/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/Footer/Footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/Footer/Footer.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/Footer/Footer.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/Footer/__snapshots__/Footer.test.tsx.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/Footer/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/GamePage.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/GamePage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/Header/Header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/Header/Header.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/Header/Header.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/Header/__snapshots__/Header.test.tsx.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/Header/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/MainLayout/MainLayout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/MainLayout/MainLayout.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/MainLayout/MainLayout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/MainLayout/__snapshots__/MainLayout.test.tsx.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/MainLayout/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/__snapshots__/GamePage.test.tsx.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/GamePage/index.tsx" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/mockedData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/ResultPage/ResultPage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/ResultPage/ResultPage.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/ResultPage/ResultPage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/ResultPage/__snapshots__/ResultPage.test.tsx.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/ResultPage/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/StartPage/StartPage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/StartPage/StartPage.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/StartPage/StartPage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/StartPage/__snapshots__/StartPage.test.tsx.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/StartPage/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/svg/close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/svg/menu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/svg/thumbs-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/configGame.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/mockConfigGame.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/mockData.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/sizes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/sizes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/start-page-base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Types/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/main-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/_main-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/sizes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/_sizes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +37,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
@@ -97,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609245704944</updated>
       <workItem from="1609245706186" duration="784000" />
-      <workItem from="1609246632284" duration="1340000" />
+      <workItem from="1609246632284" duration="4631000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1609246217609</created>

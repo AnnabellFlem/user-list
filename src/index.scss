@@ -1,5 +1,5 @@
-@import 'Styles/colors.css';
-@import 'Styles/sizes.css';
+@import 'Styles/colors.scss';
+@import 'Styles/sizes.scss';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 *,
@@ -61,4 +61,8 @@ p {
 figure {
     margin: 0;
     padding: 0;
+}
+
+img {
+  max-width: 100%;
 }
