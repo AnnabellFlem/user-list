@@ -1,0 +1,67 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "standard",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:promise/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project" : "tsconfig.json",
+    "tsconfigRootDir": ".",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "promise"
+  ],
+  "rules": {
+    "@typescript-eslint/member-delimiter-style": ["off"],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any":  "off",
+    "@typescript-eslint/camelcase": ["error", { "properties": "never" }],
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/no-var-requires": 0,
+    "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "always" }],
+    "react/display-name": "off",
+    "react/jsx-curly-spacing": ["off"],
+    "promise/no-promise-in-callback": "off",
+    "max-len": ["error",
+      {
+        "code": 80,
+        "ignoreTemplateLiterals": true,
+        "ignoreStrings": true
+      }]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  }
+}
