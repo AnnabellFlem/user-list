@@ -1,0 +1,15 @@
+:root {
+  --font-xs: 14px;
+  --font-xs-plus: 18px;
+  --font-s: 20px;
+  --font-m: 32px;
+  --font-l: 56px;
+
+  --lh-s: 16px;
+  --lh-s-plus: 21px;
+  --lh-m: 23px;
+  --lh-l: 37px;
+  --lh-xl: 65px;
+
+  --border-radius: 12px;
+}

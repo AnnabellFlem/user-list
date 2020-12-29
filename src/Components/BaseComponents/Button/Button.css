@@ -1,0 +1,48 @@
+@import '../../../Styles/colors.css';
+@import '../../../Styles/sizes.css';
+
+.btn {
+  font-weight: 600;
+  background-color: var(--orange-100);
+  border-radius: var(--border-radius);
+  color: var(--white);
+  width: 296px;
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+  align-items: center;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--orange-80);
+}
+
+.btn:active {
+  background-color: var(--orange-120);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 4px 0 0 var(--orange-120),
+  0 4px 0 var(--orange-120),
+  -4px 0 0 var(--orange-120),
+  0 -4px 0 var(--orange-120);
+}
+
+.btn--fullWidth {
+  width: 100%;
+}
+
+.btn--s {
+  font-size: var(--font-xs);
+  line-height: var(--lh-s);
+  padding: 14px 24px;
+}
+
+.btn--m {
+  font-size: var(--font-s);
+  line-height: var(--lh-m);
+  padding: 20px 24px;
+}
