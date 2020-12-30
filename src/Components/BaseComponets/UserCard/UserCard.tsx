@@ -1,20 +1,13 @@
 import React from 'react'
 import './UserCard.scss'
+import { User } from '../../../Types/User'
 
-type UserCardProp = {
-  user: {
-    id: number
-    name: string
-    surname: string
-    email: string
-    phone: string
-    birthday: string
-  }
+type UserCardProps = {
+  user: User
 }
-
 const getGender = (userId: number) => (userId % 2 === 0 ? 'men' : 'women')
 
-const UserCard: React.FC<UserCardProp> = ({ user }) => {
+const UserCard: React.FC<UserCardProps> = ({ user }) => {
   return (
     <li className="user" id={`user-${user.id}`}>
       <div className="user__header">
@@ -23,6 +16,9 @@ const UserCard: React.FC<UserCardProp> = ({ user }) => {
             src={`https://randomuser.me/api/portraits/${getGender(user.id)}/${
               user.id
             }.jpg`}
+            alt={`${user.name}`}
+            width={50}
+            height={50}
           />
         </div>
       </div>
@@ -46,6 +42,8 @@ const UserCard: React.FC<UserCardProp> = ({ user }) => {
         <span className="user__title">Birthday</span>
         <span className="user__data">{user.birthday}</span>
       </div>
+
+      <button className="user-edit">Edit info</button>
     </li>
   )
 }
