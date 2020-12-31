@@ -34,4 +34,19 @@
       }
     }
   }
+
+  &__form {
+    .user__data {
+      display: flex;
+      margin: $indent-xs 0;
+      padding: $indent-xxs $indent-xs;
+      border-radius: $border-radius-s;
+      font-size: $font-xs;
+      border: 1px solid $black-40;
+    }
+
+    .user__data {
+      text-align: start;
+    }
+  }
 }

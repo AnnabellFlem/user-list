@@ -49,7 +49,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
 
   return (
     <div className="user" id={`user-${formik.values.id}`}>
-      <form onSubmit={formik.handleSubmit}>
+      <form className="user__form" onSubmit={formik.handleSubmit}>
         <div className="user__info">
           <label className="user__title">
             Name
