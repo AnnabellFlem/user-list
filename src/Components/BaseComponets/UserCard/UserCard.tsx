@@ -4,10 +4,11 @@ import { User } from '../../../Types/User'
 
 type UserCardProps = {
   user: User
+  handleClick: any
 }
 const getGender = (userId: number) => (userId % 2 === 0 ? 'men' : 'women')
 
-const UserCard: React.FC<UserCardProps> = ({ user }) => {
+const UserCard: React.FC<UserCardProps> = ({ user, handleClick }) => {
   return (
     <li className="user" id={`user-${user.id}`}>
       <div className="user__header">
@@ -43,7 +44,9 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
         <span className="user__data">{user.birthday}</span>
       </div>
 
-      <button className="user-edit">Edit info</button>
+      <button className="user-edit" type="button" onClick={handleClick}>
+        Edit info
+      </button>
     </li>
   )
 }

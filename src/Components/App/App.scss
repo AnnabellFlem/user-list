@@ -1,21 +1,4 @@
 @import '../../Styles/sizes';
 
 .App {
-  display: grid;
-  grid-template-areas: 'main header' 'footer header';
-  grid-template-rows:  1fr max-content;
-  grid-template-columns: 2fr 1fr;
-  height: 100vh;
-  position: relative;
-}
-
-@media (max-width: 920px) {
-  .App {
-    grid-template-areas: 'header' 'main' 'footer';
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 350px) {
-
 }

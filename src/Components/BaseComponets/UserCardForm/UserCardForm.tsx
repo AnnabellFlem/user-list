@@ -4,28 +4,43 @@ import { useFormik } from 'formik'
 import { initialUserValues } from '../../../Utils/getInitialUserData'
 import * as yup from 'yup'
 
-const phoneRegExp = /^\+\d{1,3}-\d{3}-\d{3}-\d{2}-\d{2}$/
+const phoneRegExp = /^\+[(]\d{1,3}[)][ ]\d{3}-\d{3}-\d{2}-\d{2}$/
 const UserSchema = yup.object().shape({
   name: yup.string().max(16).required(),
   surname: yup.string().max(20).required(),
-  email: yup.string().email().required('Please Enter your Email'),
-  phone: yup.string().matches(phoneRegExp, 'Phone number is not valid'),
+  email: yup
+    .string()
+    .email('Please enter your valid email')
+    .required('Please enter your email'),
+  phone: yup
+    .string()
+    .matches(
+      phoneRegExp,
+      'Phone number is not valid, enter format +({country code}) XXX-XXX-XX-XX',
+    ),
 })
 
 type UserCardFormProps = {
   user: User
   isMainEditForm: boolean
+  handleCreateClick?: any
+  handleSaveClick?: any
+  handleCancelClick?: any
 }
 
 const UserCardForm: React.FC<UserCardFormProps> = ({
   user,
   isMainEditForm,
+  handleCreateClick,
+  handleSaveClick,
+  handleCancelClick,
 }) => {
   const formik = useFormik({
     initialValues: isMainEditForm ? initialUserValues : user,
     validationSchema: UserSchema,
-    onSubmit: values => {
+    onSubmit: (values, { resetForm }) => {
       alert(JSON.stringify(values, null, 2))
+      resetForm()
     },
   })
 
@@ -103,7 +118,24 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
             />
           </label>
         </div>
-        <button type="submit">Submit</button>
+        {isMainEditForm ? (
+          <button className="user__btn--create" onClick={handleCreateClick}>
+            Create
+          </button>
+        ) : (
+          <div>
+            <button className="user__btn--save" onClick={handleSaveClick}>
+              Save
+            </button>
+            <button
+              type="button"
+              className="user__btn--cancel"
+              onClick={handleCancelClick}
+            >
+              Cancel
+            </button>
+          </div>
+        )}
       </form>
     </li>
   )
