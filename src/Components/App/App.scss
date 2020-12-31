@@ -1,6 +1,15 @@
-@import 'src/Styles/sizes';
+@import 'src/Styles/sizes';@import 'src/Styles/media';
+
 
 .App {
   max-width: 80vw;
   margin: 0 auto;
+
+  @include desktop {
+    max-width: 60vw;
+  }
+
+  @include mobile {
+    max-width: 80vw;
+  }
 }

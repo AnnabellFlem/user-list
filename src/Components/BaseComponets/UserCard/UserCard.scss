@@ -11,13 +11,14 @@
   box-shadow: 0 4px 8px $black-5, 0 0 0 1px $white-10 inset;
   position: relative;
 
-  @include tablet {
-    width: calc(50% - 2 * #{$indent-m});
+  @include desktop {
+    width: calc(50% - 2 * #{$indent-s});
+    margin: $indent-m 0;
   }
 
-  @include mobile {
-    width: calc(100% - 2 * #{$indent-s});
-    margin: $indent-s;
+  @include tablet {
+    width: 100%;
+    margin: $indent-s auto;
   }
 
   &__avatar {

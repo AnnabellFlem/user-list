@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="added Header and Footer elements, icons and styles">
-      <change afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.scss" afterDir="false" />
+    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="updated styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/Filter/Filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/Filter/Filter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/Filter/Filter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/Filter/Filter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/_main-page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/_sizes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/_sizes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +67,7 @@
       <workItem from="1609320179566" duration="5034000" />
       <workItem from="1609336198739" duration="8414000" />
       <workItem from="1609399125943" duration="765000" />
-      <workItem from="1609399908800" duration="21879000" />
+      <workItem from="1609399908800" duration="23111000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1609246217609</created>
@@ -120,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609425529220</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated styles">
+      <created>1609429780831</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609429780831</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +144,8 @@
     <MESSAGE value="added main page with used cards and basic form" />
     <MESSAGE value="Added filter for List" />
     <MESSAGE value="added Header and Footer elements, icons and styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Header and Footer elements, icons and styles" />
+    <MESSAGE value="updated styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated styles" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
