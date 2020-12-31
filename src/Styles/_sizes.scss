@@ -1,10 +1,24 @@
-:root {
-  --font-s: 20px;
-  --font-m: 32px;
-  --font-l: 56px;
+//font sizes
+$font-xs: 16px;
+$font-s: 20px;
+$font-m: 32px;
+$font-l: 56px;
 
-  --lh-s: 1.2;
-  --lh-m: 1.4;
+//line height
+$lh-s: 1.2;
+$lh-m: 1.4;
 
-  --border-radius: 12px;
-}
+//border radius
+$border-radius-s: 6px;
+$border-radius-m: 12px;
+
+//margins, paddings
+$indent-xs: 12px;
+$indent-s: 16px;
+$indent-m: 20px;
+$indent-l: 24px;
+
+// breakpoints
+$mobile: 599px;
+$tablet: 959px;
+$desktop: 1279px;

@@ -1,0 +1,13 @@
+@import 'src/Styles/sizes';
+@import 'src/Styles/colors';
+
+.header {
+  display: flex;
+  justify-content: center;
+
+  &__title {
+    font-size: $font-l;
+    line-height: $lh-s;
+    color: $black-100;
+  }
+}

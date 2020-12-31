@@ -1,0 +1,15 @@
+@import 'src/Styles/sizes';
+@import 'src/Styles/colors';
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    color: $black-40;
+    font-weight: 300;
+    font-size: $font-s;
+    line-height: $lh-m;
+    padding: $indent-s 0;
+  }
+}

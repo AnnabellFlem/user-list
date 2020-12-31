@@ -3,9 +3,9 @@ import UserCardWrapper from '../../BaseComponets/UserCardWrapper'
 import { mockData } from '../../../Services/mockedData'
 import { User } from '../../../Types/User'
 import Filter from '../../BaseComponets/Filter'
+import { MAIN_EDIT_FORM } from '../../../Constants/User'
 
 const MainPage = () => {
-  const [mainEditFormId] = useState(0)
   const [filterInput, setFilterInput] = useState('')
   const [userListDefault, setUserListDefault] = useState<User[]>()
   const [userList, setUserList] = useState<User[]>()
@@ -20,6 +20,7 @@ const MainPage = () => {
       return user.name.toLowerCase().includes(input.toLowerCase())
     })
     setFilterInput(input)
+    console.log(filtered)
     setUserList(filtered)
   }
 
@@ -29,14 +30,11 @@ const MainPage = () => {
 
   return (
     <main>
+      <Filter input={filterInput} onChange={updateInput} />
+      <UserCardWrapper editFormType={MAIN_EDIT_FORM} />
       <ul>
-        <Filter input={filterInput} onChange={updateInput} />
-        {userList?.map((user, index) => (
-          <UserCardWrapper
-            key={user.id}
-            user={user}
-            isMainEditForm={index === mainEditFormId}
-          />
+        {userList?.map(user => (
+          <UserCardWrapper key={user.id} user={user} />
         ))}
       </ul>
     </main>

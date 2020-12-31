@@ -13,9 +13,9 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     font-weight: 500;
-    font-size: var(--font-m);
-    line-height: var(--lh-m);
-    color: var(--black-100);
+    font-size: $font-m;
+    line-height: $lh-m;
+    color: $black-100;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -30,7 +30,7 @@ input, button, textarea, select {
     resize: none;
     border-radius: 0;
     font-family: inherit;
-    line-height: var(--lh-m);
+    line-height: $lh-m;
 }
 
 button {

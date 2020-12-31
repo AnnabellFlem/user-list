@@ -2,15 +2,17 @@ import React, { useState } from 'react'
 import UserCardForm from '../UserCardForm'
 import UserCard from '../UserCard'
 import { User } from '../../../Types/User'
+import { MAIN_EDIT_FORM } from '../../../Constants/User'
+import { initialUserValues } from '../../../Utils/getInitialUserData'
 
-type UserCardWrapperProps = {
+type UserCardWrapperProps = Partial<{
   user: User
-  isMainEditForm: boolean
-}
+  editFormType: string
+}>
 
 const UserCardWrapper: React.FC<UserCardWrapperProps> = ({
   user,
-  isMainEditForm,
+  editFormType,
 }) => {
   const [userForm, setUserForm] = useState<boolean>()
 
@@ -30,21 +32,37 @@ const UserCardWrapper: React.FC<UserCardWrapperProps> = ({
     setUserForm(true)
   }
 
-  return (
-    <>
-      {userForm || isMainEditForm ? (
-        <UserCardForm
-          user={user}
-          isMainEditForm={isMainEditForm}
-          handleSaveClick={handleSaveClick}
-          handleCreateClick={handleCreateClick}
-          handleCancelClick={handleCancelClick}
+  const isMainEditForm = (formType: string) => {
+    console.log(editFormType === formType)
+    return editFormType === formType
+  }
+
+  const renderUserCard = () => {
+    if (userForm) {
+      return (
+        <li>
+          <UserCardForm
+            user={user}
+            handleSaveClick={handleSaveClick}
+            handleCancelClick={handleCancelClick}
+          />
+        </li>
+      )
+    } else if (isMainEditForm(MAIN_EDIT_FORM)) {
+      return (
+        <UserCardForm isMainEditForm handleCreateClick={handleCreateClick} />
+      )
+    } else {
+      return (
+        <UserCard
+          user={user || initialUserValues}
+          handleClick={handleEditClick}
         />
-      ) : (
-        <UserCard user={user} handleClick={handleEditClick} />
-      )}
-    </>
-  )
+      )
+    }
+  }
+
+  return <>{renderUserCard()}</>
 }
 
 export default UserCardWrapper

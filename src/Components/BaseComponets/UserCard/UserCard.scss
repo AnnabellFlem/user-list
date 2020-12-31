@@ -1,9 +1,12 @@
+@import 'src/Styles/sizes';
+@import 'src/Styles/colors';
+
 .user {
-  margin: 20px;
-  border-radius: 6px;
-  width: calc(33.3% - 40px);
+  margin: $indent-m;
+  border-radius: $border-radius-s;
+  width: calc(33.3% - 2 * #{$indent-m});
   overflow: hidden;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05), 0 0 0 1px #ddd inset;
+  box-shadow: 0 5px 10px $black-5, 0 0 0 1px $white-10 inset;
   position: relative;
 
   &__avatar {
@@ -12,14 +15,14 @@
     border-radius: 50%;
     overflow: hidden;
     font-size: 0;
-    margin-right: 12px;
+    margin-right: $indent-xs;
   }
 
   &__header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 20px;
+    padding: $indent-m;
     background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.05) 0%,

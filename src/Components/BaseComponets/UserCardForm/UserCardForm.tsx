@@ -21,8 +21,8 @@ const UserSchema = yup.object().shape({
 })
 
 type UserCardFormProps = {
-  user: User
-  isMainEditForm: boolean
+  user?: User
+  isMainEditForm?: boolean
   handleCreateClick?: any
   handleSaveClick?: any
   handleCancelClick?: any
@@ -36,7 +36,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
   handleCancelClick,
 }) => {
   const formik = useFormik({
-    initialValues: isMainEditForm ? initialUserValues : user,
+    initialValues: user || initialUserValues,
     validationSchema: UserSchema,
     onSubmit: (values, { resetForm }) => {
       alert(JSON.stringify(values, null, 2))
@@ -45,7 +45,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
   })
 
   return (
-    <li className="user" id={`user-${user.id}`}>
+    <div className="user" id={`user-${formik.values.id}`}>
       <form onSubmit={formik.handleSubmit}>
         <div className="user__info">
           <label className="user__title">
@@ -137,7 +137,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
           </div>
         )}
       </form>
-    </li>
+    </div>
   )
 }
 
