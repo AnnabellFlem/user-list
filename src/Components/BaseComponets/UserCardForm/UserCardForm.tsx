@@ -1,8 +1,11 @@
 import React from 'react'
-import { User } from '../../../Types/User'
 import { useFormik } from 'formik'
-import { initialUserValues } from '../../../Utils/getInitialUserData'
 import * as yup from 'yup'
+import { User } from '../../../Types/User'
+import { initialUserValues } from '../../../Utils/getInitialUserData'
+
+import '../UserCard/UserCard.scss'
+import '../UserCardForm/UserCardForm.scss'
 
 const phoneRegExp = /^\+[(]\d{1,3}[)][ ]\d{3}-\d{3}-\d{2}-\d{2}$/
 const UserSchema = yup.object().shape({

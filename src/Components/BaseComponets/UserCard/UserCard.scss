@@ -1,13 +1,24 @@
 @import 'src/Styles/sizes';
 @import 'src/Styles/colors';
+@import 'src/Styles/media';
 
 .user {
-  margin: $indent-m;
+  margin: $indent-m 0;
   border-radius: $border-radius-s;
   width: calc(33.3% - 2 * #{$indent-m});
+  min-width: 280px;
   overflow: hidden;
-  box-shadow: 0 5px 10px $black-5, 0 0 0 1px $white-10 inset;
+  box-shadow: 0 4px 8px $black-5, 0 0 0 1px $white-10 inset;
   position: relative;
+
+  @include tablet {
+    width: calc(50% - 2 * #{$indent-m});
+  }
+
+  @include mobile {
+    width: calc(100% - 2 * #{$indent-s});
+    margin: $indent-s;
+  }
 
   &__avatar {
     width: 50px;
@@ -37,47 +48,42 @@
     text-align: right;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-left: 20px;
+    padding-left: $indent-m;
   }
 
-
   &__info {
-    padding: 16px 20px;
+    padding: $indent-s $indent-m;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    font-size: 15px;
+    font-size: $font-xs;
+    line-height: $lh-s;
   }
 
   &__info + &__info {
-    border-top: 1px solid #efefef;
+    border-top: 1px solid $white-50;
   }
 
   &__title {
-    font-size: 11px;
+    font-size: $font-xs;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.4);
+    color: $black-40;
     letter-spacing: 1px;
   }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
-}
+  &__btn--edit {
+    border: 1px solid $black-5;
+    background-color: $white-10;
+    border-radius: $border-radius-s;
+    padding: $indent-xxs $indent-xs;
+    color: $black-100;
+    font-size: $font-xs;
+    margin: $indent-s $indent-m;
+    transition: all 0.2s ease;
 
-@media (max-width: 800px) {
-  .user {
-    width: calc(50% - 40px);
-  }
-}
-
-@media (max-width: 600px) {
-  .user {
-    width: calc(100% - 40px);
+    &:hover {
+      box-shadow: 0 5px 10px $black-5;
+    }
   }
 }

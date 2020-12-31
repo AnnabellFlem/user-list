@@ -4,6 +4,7 @@ import { mockData } from '../../../Services/mockedData'
 import { User } from '../../../Types/User'
 import Filter from '../../BaseComponets/Filter'
 import { MAIN_EDIT_FORM } from '../../../Constants/User'
+import './MainPage.scss'
 
 const MainPage = () => {
   const [filterInput, setFilterInput] = useState('')
@@ -32,7 +33,7 @@ const MainPage = () => {
     <main>
       <Filter input={filterInput} onChange={updateInput} />
       <UserCardWrapper editFormType={MAIN_EDIT_FORM} />
-      <ul>
+      <ul className="list">
         {userList?.map(user => (
           <UserCardWrapper key={user.id} user={user} />
         ))}

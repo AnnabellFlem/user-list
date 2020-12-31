@@ -1,6 +1,6 @@
 import React from 'react'
-import './UserCard.scss'
 import { User } from '../../../Types/User'
+import './UserCard.scss'
 
 type UserCardProps = {
   user: User
@@ -44,7 +44,7 @@ const UserCard: React.FC<UserCardProps> = ({ user, handleClick }) => {
         <span className="user__data">{user.birthday}</span>
       </div>
 
-      <button className="user-edit" type="button" onClick={handleClick}>
+      <button className="user__btn--edit" type="button" onClick={handleClick}>
         Edit info
       </button>
     </li>

@@ -1,0 +1,37 @@
+@import 'src/Styles/sizes';
+@import 'src/Styles/colors';
+
+.user {
+  &__btn {
+    &--cancel {
+      border: 1px solid $black-40;
+      background-color: $black-5;
+      color: $white-10;
+    }
+
+    &--create,
+    &--save {
+      border: 1px solid $black-5;
+      background-color: $white-10;
+
+      &:hover {
+        background-color: darken($white-10, 5);
+      }
+    }
+
+    &--cancel,
+    &--save,
+    &--create {
+      border-radius: $border-radius-s;
+      padding: $indent-xxs $indent-xs;
+      color: $black-100;
+      font-size: $font-xs;
+      margin: $indent-s $indent-m;
+      transition: all 0.2s ease;
+
+      &:hover {
+        box-shadow: 0 5px 10px $black-5;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import 'src/Styles/sizes';
+@import 'src/Styles/colors';
+
+.filter {
+  display: flex;
+  justify-content: center;
+
+  &__input {
+    width: 100%;
+    background: $white-50;
+    border: none;
+    font-size: $font-s;
+    padding: $indent-s $indent-xs;
+  }
+}
