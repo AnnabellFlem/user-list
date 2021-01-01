@@ -1,0 +1,9 @@
+@import 'src/Styles/sizes';
+@import 'src/Styles/colors';
+
+.error-message {
+  display: flex;
+  color: $error;
+  font-size: $font-xs;
+  font-weight: 300;
+}

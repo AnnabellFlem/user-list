@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="added adaptive card view">
+    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="added styles for form">
+      <change afterPath="$PROJECT_DIR$/src/Components/BaseComponets/ErrorMessage/ErrorMessage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/BaseComponets/ErrorMessage/ErrorMessage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/BaseComponets/ErrorMessage/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/_colors.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +52,8 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper" />
       <recent name="$PROJECT_DIR$/src/Components/BaseComponets" />
+      <recent name="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -64,7 +69,8 @@
       <workItem from="1609320179566" duration="5034000" />
       <workItem from="1609336198739" duration="8414000" />
       <workItem from="1609399125943" duration="765000" />
-      <workItem from="1609399908800" duration="23886000" />
+      <workItem from="1609399908800" duration="24165000" />
+      <workItem from="1609501197788" duration="1359000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1609246217609</created>
@@ -122,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609431075687</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added styles for form">
+      <created>1609431990902</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609431990902</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +163,8 @@
     <MESSAGE value="added Header and Footer elements, icons and styles" />
     <MESSAGE value="updated styles" />
     <MESSAGE value="added adaptive card view" />
-    <option name="LAST_COMMIT_MESSAGE" value="added adaptive card view" />
+    <MESSAGE value="added styles for form" />
+    <option name="LAST_COMMIT_MESSAGE" value="added styles for form" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

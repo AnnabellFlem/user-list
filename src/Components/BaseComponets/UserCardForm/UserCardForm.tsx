@@ -3,6 +3,7 @@ import { useFormik } from 'formik'
 import * as yup from 'yup'
 import { User } from '../../../Types/User'
 import { initialUserValues } from '../../../Utils/getInitialUserData'
+import ErrorMessage from '../ErrorMessage'
 
 import '../UserCard/UserCard.scss'
 import '../UserCardForm/UserCardForm.scss'
@@ -48,7 +49,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
   })
 
   return (
-    <div className="user" id={`user-${formik.values.id}`}>
+    <div id={`user-${formik.values.id}`}>
       <form className="user__form" onSubmit={formik.handleSubmit}>
         <div className="user__info">
           <label className="user__title">
@@ -62,7 +63,9 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
               className="user__data"
             />
           </label>
-          {formik.errors.name ? <div>{formik.errors.name}</div> : null}
+          {formik.errors.name && (
+            <ErrorMessage>{formik.errors.name}</ErrorMessage>
+          )}
         </div>
         <div className="user__info">
           <label className="user__title">
@@ -76,7 +79,9 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
               className="user__data"
             />
           </label>
-          {formik.errors.surname ? <div>{formik.errors.surname}</div> : null}
+          {formik.errors.surname && (
+            <ErrorMessage>{formik.errors.surname}</ErrorMessage>
+          )}
         </div>
         <div className="user__info">
           <label className="user__title">
@@ -90,7 +95,9 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
               className="user__data"
             />
           </label>
-          {formik.errors.email ? <div>{formik.errors.email}</div> : null}
+          {formik.errors.email && (
+            <ErrorMessage>{formik.errors.email}</ErrorMessage>
+          )}
         </div>
         <div className="user__info">
           <label className="user__title">
@@ -104,7 +111,9 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
               className="user__data"
             />
           </label>
-          {formik.errors.phone ? <div>{formik.errors.phone}</div> : null}
+          {formik.errors.phone && (
+            <ErrorMessage>{formik.errors.phone}</ErrorMessage>
+          )}
         </div>
         <div className="user__info">
           <label className="user__title">

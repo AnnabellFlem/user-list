@@ -40,18 +40,16 @@ const UserCardWrapper: React.FC<UserCardWrapperProps> = ({
   const renderUserCard = () => {
     if (userForm) {
       return (
-        <li>
+        <li className="user">
           <UserCardForm
             user={user}
-            handleSaveClick={handleSaveClick}
+            handleCreateClick={handleCreateClick}
             handleCancelClick={handleCancelClick}
           />
         </li>
       )
     } else if (isMainEditForm(MAIN_EDIT_FORM)) {
-      return (
-        <UserCardForm isMainEditForm handleCreateClick={handleCreateClick} />
-      )
+      return <UserCardForm isMainEditForm handleSaveClick={handleSaveClick} />
     } else {
       return (
         <UserCard
