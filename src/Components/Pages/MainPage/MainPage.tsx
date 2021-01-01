@@ -6,6 +6,7 @@ import Filter from '../../BaseComponets/Filter'
 import { MAIN_EDIT_FORM, PER_PAGE } from '../../../Constants/User'
 import { Pagination } from '@material-ui/lab'
 import usePagination from '../../../Hooks/usePagination'
+import { usersRef } from '../../../Services/firebase'
 import './MainPage.scss'
 
 const MainPage = () => {
@@ -22,11 +23,6 @@ const MainPage = () => {
     return _DATA?.jump(page)
   }
 
-  const fetchData = () => {
-    setUserList(mockData) // real data
-    setUserListDefault(mockData) // real data
-  }
-
   const updateInput = (input: string) => {
     const filtered = userListDefault?.filter(user => {
       return user.name.toLowerCase().includes(input.toLowerCase())
@@ -36,7 +32,16 @@ const MainPage = () => {
   }
 
   useEffect(() => {
-    fetchData()
+    usersRef.on('value', data => {
+      const items = data.val()
+      const newState: User[] = []
+      Object.keys(items).forEach(key => {
+        newState.push(items[key])
+      })
+      console.log(newState, '<<<items')
+      setUserList(newState)
+      setUserListDefault(newState)
+    })
   }, [])
 
   return (

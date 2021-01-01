@@ -4,6 +4,7 @@ import * as yup from 'yup'
 import { User } from '../../../Types/User'
 import { initialUserValues } from '../../../Utils/getInitialUserData'
 import ErrorMessage from '../ErrorMessage'
+import { usersRef } from '../../../Services/firebase'
 
 import '../UserCard/UserCard.scss'
 import '../UserCardForm/UserCardForm.scss'
@@ -43,7 +44,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
     initialValues: user || initialUserValues,
     validationSchema: UserSchema,
     onSubmit: (values, { resetForm }) => {
-      alert(JSON.stringify(values, null, 2))
+      usersRef.push(values)
       resetForm()
     },
   })
