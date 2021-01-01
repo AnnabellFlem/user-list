@@ -50,7 +50,10 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
 
   return (
     <div id={`user-${formik.values.id}`}>
-      <form className="user__form" onSubmit={formik.handleSubmit}>
+      <form
+        className={`${isMainEditForm ? 'user__form--main' : ''} user__form`}
+        onSubmit={formik.handleSubmit}
+      >
         <div className="user__info">
           <label className="user__title">
             Name

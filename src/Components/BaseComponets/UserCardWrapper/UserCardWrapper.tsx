@@ -33,7 +33,6 @@ const UserCardWrapper: React.FC<UserCardWrapperProps> = ({
   }
 
   const isMainEditForm = (formType: string) => {
-    console.log(editFormType === formType)
     return editFormType === formType
   }
 

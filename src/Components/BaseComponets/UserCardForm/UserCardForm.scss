@@ -1,5 +1,6 @@
 @import 'src/Styles/sizes';
 @import 'src/Styles/colors';
+@import 'src/Styles/media';
 
 .user {
   &__btn {
@@ -37,16 +38,35 @@
 
   &__form {
     .user__data {
-      display: flex;
-      margin: $indent-xs 0;
+      margin: $indent-xs 0 $indent-xs $indent-s;
       padding: $indent-xxs $indent-xs;
       border-radius: $border-radius-s;
       font-size: $font-xs;
       border: 1px solid $black-40;
+      text-align: start;
+      display: inline-flex;
+      width: 100%;
     }
 
-    .user__data {
-      text-align: start;
+    .user__title {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .user__info {
+      padding: $indent-xxs $indent-s;
+    }
+
+    &--main {
+      .user__data {
+        display: inline-flex;
+        margin: $indent-xs 0 $indent-xs $indent-l;
+
+        @include tablet {
+          display: flex;
+          margin: $indent-xs 0;
+        }
+      }
     }
   }
 }

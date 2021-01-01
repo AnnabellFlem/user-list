@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="added styles for form">
-      <change afterPath="$PROJECT_DIR$/src/Components/BaseComponets/ErrorMessage/ErrorMessage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/BaseComponets/ErrorMessage/ErrorMessage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/BaseComponets/ErrorMessage/index.tsx" afterDir="false" />
+    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="added error message component, updated styles">
+      <change afterPath="$PROJECT_DIR$/src/Hooks/usePagination.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Constants/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants/User.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
       <workItem from="1609336198739" duration="8414000" />
       <workItem from="1609399125943" duration="765000" />
       <workItem from="1609399908800" duration="24165000" />
-      <workItem from="1609501197788" duration="1359000" />
+      <workItem from="1609501197788" duration="6382000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1609246217609</created>
@@ -135,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609431990902</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added error message component, updated styles">
+      <created>1609502695003</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609502695003</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +174,8 @@
     <MESSAGE value="updated styles" />
     <MESSAGE value="added adaptive card view" />
     <MESSAGE value="added styles for form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added styles for form" />
+    <MESSAGE value="added error message component, updated styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added error message component, updated styles" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

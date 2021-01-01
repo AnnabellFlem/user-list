@@ -6,3 +6,9 @@
   justify-content: space-between;
   margin: 0 auto;
 }
+
+.pagination {
+  margin: $indent-l 0;
+  display: flex;
+  justify-content: center;
+}

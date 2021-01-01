@@ -7,9 +7,12 @@
   border-radius: $border-radius-s;
   width: calc(33.3% - 2 * #{$indent-m});
   min-width: 280px;
+  min-height: 480px;
   overflow: hidden;
   box-shadow: 0 4px 8px $black-5, 0 0 0 1px $white-10 inset;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   @include desktop {
     width: calc(50% - 2 * #{$indent-s});
@@ -80,7 +83,7 @@
     padding: $indent-xxs $indent-xs;
     color: $black-100;
     font-size: $font-xs;
-    margin: $indent-s $indent-m;
+    margin: auto $indent-m $indent-s;
     transition: all 0.2s ease;
 
     &:hover {
