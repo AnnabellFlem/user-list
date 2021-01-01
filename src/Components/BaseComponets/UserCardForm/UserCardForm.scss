@@ -51,6 +51,10 @@
     .user__title {
       display: inline-flex;
       align-items: center;
+
+      @include tablet {
+        width: 100%;
+      }
     }
 
     .user__info {
@@ -66,6 +70,12 @@
           display: flex;
           margin: $indent-xs 0;
         }
+      }
+
+      .user__title {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
       }
     }
   }
