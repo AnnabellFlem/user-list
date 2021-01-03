@@ -1,6 +1,6 @@
 export const mockData = [
   {
-    id: 1,
+    id: '1',
     name: 'Leanne',
     surname: 'Bret',
     email: 'Sincere@april.biz',
@@ -8,7 +8,7 @@ export const mockData = [
     birthday: '19.11.1997',
   },
   {
-    id: 2,
+    id: '2',
     name: 'Ervin',
     surname: 'Antonette',
     email: 'Shanna@melissa.tv',
@@ -16,7 +16,7 @@ export const mockData = [
     birthday: '19.11.1997',
   },
   {
-    id: 3,
+    id: '3',
     name: 'Clementine',
     surname: 'Samantha',
     email: 'Nathan@yesenia.net',
@@ -24,7 +24,7 @@ export const mockData = [
     birthday: '19.11.1997',
   },
   {
-    id: 4,
+    id: '4',
     name: 'Patricia',
     surname: 'Karianne',
     email: 'Julianne.OConner@kory.org',
@@ -32,7 +32,7 @@ export const mockData = [
     birthday: '19.11.1997',
   },
   {
-    id: 5,
+    id: '5',
     name: 'Chelsey',
     surname: 'Kamren',
     email: 'Lucio_Hettinger@annie.ca',
@@ -40,7 +40,7 @@ export const mockData = [
     birthday: '19.11.1997',
   },
   {
-    id: 6,
+    id: '6',
     name: 'Dennis',
     surname: 'Leopoldo_Corkery',
     email: 'Karley_Dach@jasper.info',
@@ -48,7 +48,7 @@ export const mockData = [
     birthday: '19.11.1997',
   },
   {
-    id: 7,
+    id: '7',
     name: 'Kurtis',
     surname: 'Elwyn.Skiles',
     email: 'Telly.Hoeger@billy.biz',
@@ -56,7 +56,7 @@ export const mockData = [
     birthday: '19.11.1997',
   },
   {
-    id: 8,
+    id: '8',
     name: 'Nicholas V',
     surname: 'Maxime_Nienow',
     email: 'Sherwood@rosamond.me',
@@ -64,7 +64,7 @@ export const mockData = [
     birthday: '19.11.1997',
   },
   {
-    id: 9,
+    id: '9',
     name: 'Glenna',
     surname: 'Delphine',
     email: 'Chaim_McDermott@dana.io',
@@ -72,7 +72,7 @@ export const mockData = [
     birthday: '19.11.1997',
   },
   {
-    id: 10,
+    id: '10',
     name: 'Clementina',
     surname: 'Moriah.Stanton',
     email: 'Rey.Padberg@karina.biz',

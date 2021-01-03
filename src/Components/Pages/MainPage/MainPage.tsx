@@ -11,8 +11,8 @@ import './MainPage.scss'
 
 const MainPage = () => {
   const [filterInput, setFilterInput] = useState('')
-  const [userListDefault, setUserListDefault] = useState<User[]>(mockData)
-  const [userList, setUserList] = useState<User[]>(mockData)
+  const [userListDefault, setUserListDefault] = useState<User[]>([])
+  const [userList, setUserList] = useState<User[]>([])
   const [currentPage, setCurrentPage] = useState(1)
 
   const count = Math.ceil(userList.length / PER_PAGE)
@@ -32,16 +32,23 @@ const MainPage = () => {
   }
 
   useEffect(() => {
-    usersRef.on('value', data => {
-      const items = data.val()
-      const newState: User[] = []
-      Object.keys(items).forEach(key => {
-        newState.push(items[key])
+    if (usersRef) {
+      usersRef.on('value', data => {
+        const items = data.val()
+        const newState: User[] = []
+        if (items) {
+          Object.keys(items).forEach(key => {
+            newState.push({ ...items[key], id: key })
+          })
+        }
+        console.log(newState, '<<< items')
+        setUserList(newState)
+        setUserListDefault(newState)
       })
-      console.log(newState, '<<<items')
-      setUserList(newState)
-      setUserListDefault(newState)
-    })
+    } else {
+      setUserList(mockData) // todo fix fallback
+      setUserListDefault(mockData)
+    }
   }, [])
 
   return (

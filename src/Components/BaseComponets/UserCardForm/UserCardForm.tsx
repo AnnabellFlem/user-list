@@ -44,7 +44,15 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
     initialValues: user || initialUserValues,
     validationSchema: UserSchema,
     onSubmit: (values, { resetForm }) => {
-      usersRef.push(values)
+      if (isMainEditForm) {
+        usersRef.push(values)
+      } else {
+        usersRef
+          .child(`${values.id}`)
+          .set(values)
+          .then(() => console.log('Data added successfully'))
+          .catch(error => console.log('Adding failed with error' + error))
+      }
       resetForm()
     },
   })
