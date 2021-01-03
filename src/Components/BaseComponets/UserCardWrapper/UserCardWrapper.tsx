@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import UserCardForm from '../UserCardForm'
 import UserCard from '../UserCard'
 import { User } from '../../../Types/User'
-import { MAIN_EDIT_FORM } from '../../../Constants/User'
+import { MAIN_EDIT_FORM_TYPE } from '../../../Constants/User'
 import { initialUserValues } from '../../../Utils/getInitialUserData'
 
 type UserCardWrapperProps = Partial<{
@@ -48,7 +48,7 @@ const UserCardWrapper: React.FC<UserCardWrapperProps> = ({
           />
         </li>
       )
-    } else if (isMainEditForm(MAIN_EDIT_FORM)) {
+    } else if (isMainEditForm(MAIN_EDIT_FORM_TYPE)) {
       return <UserCardForm isMainEditForm handleSaveClick={handleSaveClick} />
     } else {
       return (

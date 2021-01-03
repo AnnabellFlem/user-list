@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="updated firebase config, jest config, styles for the main form">
+    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="Updated styles, function for fetching firebase data, deleted image avatar from cards">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Constants/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants/User.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/firebase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/mockedData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/mockedData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Types/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types/User.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/getInitialUserData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/getInitialUserData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/getRandomInt.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/getRandomInt.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +106,7 @@
       <workItem from="1609399125943" duration="765000" />
       <workItem from="1609399908800" duration="24165000" />
       <workItem from="1609501197788" duration="15744000" />
-      <workItem from="1609669615583" duration="19115000" />
+      <workItem from="1609669615583" duration="21205000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1609246217609</created>
@@ -226,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609680804884</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Updated styles, function for fetching firebase data, deleted image avatar from cards">
+      <created>1609691406471</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1609691406471</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +263,8 @@
     <MESSAGE value="comment test(temporary)" />
     <MESSAGE value="uncomment test" />
     <MESSAGE value="updated firebase config, jest config, styles for the main form" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated firebase config, jest config, styles for the main form" />
+    <MESSAGE value="Updated styles, function for fetching firebase data, deleted image avatar from cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated styles, function for fetching firebase data, deleted image avatar from cards" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

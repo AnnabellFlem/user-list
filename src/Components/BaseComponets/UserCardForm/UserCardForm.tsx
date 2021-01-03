@@ -143,12 +143,20 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
           </label>
         </div>
         {isMainEditForm ? (
-          <button className="user__btn--create" onClick={handleCreateClick}>
+          <button
+            type="submit"
+            className="user__btn--create"
+            onClick={handleCreateClick}
+          >
             Create
           </button>
         ) : (
           <div>
-            <button className="user__btn--save" onClick={handleSaveClick}>
+            <button
+              type="submit"
+              className="user__btn--save"
+              onClick={handleSaveClick}
+            >
               Save
             </button>
             <button

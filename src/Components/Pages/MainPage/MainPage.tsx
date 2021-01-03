@@ -3,7 +3,7 @@ import UserCardWrapper from '../../BaseComponets/UserCardWrapper'
 import { mockData } from '../../../Services/mockedData'
 import { User } from '../../../Types/User'
 import Filter from '../../BaseComponets/Filter'
-import { MAIN_EDIT_FORM, PER_PAGE } from '../../../Constants/User'
+import { MAIN_EDIT_FORM_TYPE, PER_PAGE } from '../../../Constants/User'
 import { Pagination } from '@material-ui/lab'
 import usePagination from '../../../Hooks/usePagination'
 import { usersRef } from '../../../Services/firebase'
@@ -32,29 +32,35 @@ const MainPage = () => {
   }
 
   useEffect(() => {
-    if (usersRef) {
-      usersRef.on('value', data => {
-        const items = data.val()
-        const newState: User[] = []
-        if (items) {
-          Object.keys(items).forEach(key => {
-            newState.push({ ...items[key], id: key })
-          })
+    usersRef.on(
+      'value',
+      data => {
+        if (data.exists()) {
+          const items = data.val()
+          const newState: User[] = []
+          if (items) {
+            Object.keys(items).forEach(key => {
+              newState.push({ ...items[key], id: key })
+            })
+          }
+          console.log(newState, '<<< items')
+          setUserList(newState)
+          setUserListDefault(newState)
+        } else {
+          setUserList(mockData)
+          setUserListDefault(mockData)
         }
-        console.log(newState, '<<< items')
-        setUserList(newState)
-        setUserListDefault(newState)
-      })
-    } else {
-      setUserList(mockData) // todo fix fallback
-      setUserListDefault(mockData)
-    }
+      },
+      (error: Error) => {
+        console.log(error)
+      },
+    )
   }, [])
 
   return (
     <main>
       <Filter input={filterInput} onChange={updateInput} />
-      <UserCardWrapper editFormType={MAIN_EDIT_FORM} />
+      <UserCardWrapper editFormType={MAIN_EDIT_FORM_TYPE} />
       <ul className="list">
         {_DATA?.currentData().map(user => (
           <UserCardWrapper key={user.id} user={user} />
