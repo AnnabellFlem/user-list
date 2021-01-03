@@ -7,7 +7,6 @@ import { initialUserValues } from '../../../Utils/getInitialUserData'
 
 type UserCardWrapperProps = Partial<{
   user: User
-  initUserValues: User
   editFormType: string
 }>
 

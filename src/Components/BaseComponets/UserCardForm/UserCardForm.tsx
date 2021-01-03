@@ -66,134 +66,132 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
   })
 
   return (
-    <div>
-      <form
-        className={`${isMainEditForm ? 'user__form--main' : ''} user__form`}
-        onSubmit={formik.handleSubmit}
-      >
-        <div className="user__info">
-          <label className="user__title">
-            Name
-            <input
-              id="name"
-              name="name"
-              type="text"
-              onChange={formik.handleChange}
-              value={formik.values.name}
-              className="user__data"
-            />
-          </label>
-          {formik.errors.name && (
-            <ErrorMessage>{formik.errors.name}</ErrorMessage>
-          )}
-        </div>
-        <div className="user__info">
-          <label className="user__title">
-            Surname
-            <input
-              id="surname"
-              name="surname"
-              type="text"
-              onChange={formik.handleChange}
-              value={formik.values.surname}
-              className="user__data"
-            />
-          </label>
-          {formik.errors.surname && (
-            <ErrorMessage>{formik.errors.surname}</ErrorMessage>
-          )}
-        </div>
-        <div className="user__info">
-          <label className="user__title">
-            Email
-            <input
-              id="email"
-              name="email"
-              type="email"
-              onChange={formik.handleChange}
-              value={formik.values.email}
-              className="user__data"
-            />
-          </label>
-          {formik.errors.email && (
-            <ErrorMessage>{formik.errors.email}</ErrorMessage>
-          )}
-        </div>
-        <div className="user__info">
-          <label className="user__title">
-            Phone
-            <input
-              id="phone"
-              name="phone"
-              type="tel"
-              onChange={formik.handleChange}
-              value={formik.values.phone}
-              className="user__data"
-            />
-          </label>
-          {formik.errors.phone && (
-            <ErrorMessage>{formik.errors.phone}</ErrorMessage>
-          )}
-        </div>
-        <div className="user__info">
-          <label className="user__title">
-            Birthday
-            <input
-              id="birthday"
-              name="birthday"
-              type="date"
-              onChange={formik.handleChange}
-              value={formik.values.birthday}
-              className="user__data"
-              min="1950-01-01"
-              max="2018-12-31"
-            />
-          </label>
-        </div>
-        <div className="user__info">
-          <label className="user__title">
-            Credit card
-            <input
-              id="credit"
-              name="credit"
-              type="text"
-              onChange={formik.handleChange}
-              value={formik.values.credit}
-              className="user__data"
-            />
-          </label>
-          {formik.errors.credit && (
-            <ErrorMessage>{formik.errors.credit}</ErrorMessage>
-          )}
-        </div>
-        {isMainEditForm ? (
+    <form
+      className={`${isMainEditForm ? 'user__form--main' : ''} user__form`}
+      onSubmit={formik.handleSubmit}
+    >
+      <div className="user__info">
+        <label className="user__title">
+          Name
+          <input
+            id="name"
+            name="name"
+            type="text"
+            onChange={formik.handleChange}
+            value={formik.values.name}
+            className="user__data"
+          />
+        </label>
+        {formik.errors.name && (
+          <ErrorMessage>{formik.errors.name}</ErrorMessage>
+        )}
+      </div>
+      <div className="user__info">
+        <label className="user__title">
+          Surname
+          <input
+            id="surname"
+            name="surname"
+            type="text"
+            onChange={formik.handleChange}
+            value={formik.values.surname}
+            className="user__data"
+          />
+        </label>
+        {formik.errors.surname && (
+          <ErrorMessage>{formik.errors.surname}</ErrorMessage>
+        )}
+      </div>
+      <div className="user__info">
+        <label className="user__title">
+          Email
+          <input
+            id="email"
+            name="email"
+            type="email"
+            onChange={formik.handleChange}
+            value={formik.values.email}
+            className="user__data"
+          />
+        </label>
+        {formik.errors.email && (
+          <ErrorMessage>{formik.errors.email}</ErrorMessage>
+        )}
+      </div>
+      <div className="user__info">
+        <label className="user__title">
+          Phone
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            onChange={formik.handleChange}
+            value={formik.values.phone}
+            className="user__data"
+          />
+        </label>
+        {formik.errors.phone && (
+          <ErrorMessage>{formik.errors.phone}</ErrorMessage>
+        )}
+      </div>
+      <div className="user__info">
+        <label className="user__title">
+          Birthday
+          <input
+            id="birthday"
+            name="birthday"
+            type="date"
+            onChange={formik.handleChange}
+            value={formik.values.birthday}
+            className="user__data"
+            min="1950-01-01"
+            max="2018-12-31"
+          />
+        </label>
+      </div>
+      <div className="user__info">
+        <label className="user__title">
+          Credit card
+          <input
+            id="credit"
+            name="credit"
+            type="text"
+            onChange={formik.handleChange}
+            value={formik.values.credit}
+            className="user__data"
+          />
+        </label>
+        {formik.errors.credit && (
+          <ErrorMessage>{formik.errors.credit}</ErrorMessage>
+        )}
+      </div>
+      {isMainEditForm ? (
+        <button
+          type="submit"
+          className="user__btn--create"
+          onClick={handleCreateClick}
+        >
+          Create
+        </button>
+      ) : (
+        <div>
           <button
             type="submit"
-            className="user__btn--create"
-            onClick={handleCreateClick}
+            className="user__btn--save"
+            onClick={handleSaveClick}
           >
-            Create
+            Save
           </button>
-        ) : (
-          <div>
-            <button
-              type="submit"
-              className="user__btn--save"
-              onClick={handleSaveClick}
-            >
-              Save
-            </button>
-            <button
-              type="button"
-              className="user__btn--cancel"
-              onClick={handleCancelClick}
-            >
-              Cancel
-            </button>
-          </div>
-        )}
-      </form>
-    </div>
+          <button
+            type="button"
+            className="user__btn--cancel"
+            onClick={handleCancelClick}
+          >
+            Cancel
+          </button>
+        </div>
+      )}
+    </form>
   )
 }
 
