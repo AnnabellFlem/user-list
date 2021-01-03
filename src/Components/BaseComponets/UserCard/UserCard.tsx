@@ -9,7 +9,7 @@ type UserCardProps = {
 
 const UserCard: React.FC<UserCardProps> = ({ user, handleClick }) => {
   return (
-    <li className="user" id={`user-${user.id}`}>
+    <li className="user">
       <div className="user__info">
         <span className="user__title">Name</span>
         <span className="user__data">{user.name}</span>
@@ -29,6 +29,10 @@ const UserCard: React.FC<UserCardProps> = ({ user, handleClick }) => {
       <div className="user__info">
         <span className="user__title">Birthday</span>
         <span className="user__data">{user.birthday}</span>
+      </div>
+      <div className="user__info">
+        <span className="user__title">Credit card</span>
+        <span className="user__data">{user.credit}</span>
       </div>
 
       <button className="user__btn--edit" type="button" onClick={handleClick}>

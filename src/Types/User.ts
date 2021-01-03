@@ -5,4 +5,5 @@ export type User = {
   email: string
   phone: string
   birthday: string
+  credit: string
 }

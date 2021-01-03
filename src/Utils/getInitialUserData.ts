@@ -7,5 +7,5 @@ export const initialUserValues = {
   email: '',
   phone: '',
   birthday: '',
-  gender: '',
+  credit: '',
 }

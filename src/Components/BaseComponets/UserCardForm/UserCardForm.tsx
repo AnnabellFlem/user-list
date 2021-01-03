@@ -1,6 +1,7 @@
 import React from 'react'
 import { useFormik } from 'formik'
 import * as yup from 'yup'
+import valid from 'card-validator'
 import { User } from '../../../Types/User'
 import { initialUserValues } from '../../../Utils/getInitialUserData'
 import ErrorMessage from '../ErrorMessage'
@@ -22,6 +23,13 @@ const UserSchema = yup.object().shape({
     .matches(
       phoneRegExp,
       'Phone number is not valid, enter format +({country code}) XXX-XXX-XX-XX',
+    ),
+  credit: yup
+    .string()
+    .test(
+      'test-number',
+      'Credit Card number is invalid',
+      value => valid.number(value).isValid,
     ),
 })
 
@@ -58,7 +66,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
   })
 
   return (
-    <div id={`user-${formik.values.id}`}>
+    <div>
       <form
         className={`${isMainEditForm ? 'user__form--main' : ''} user__form`}
         onSubmit={formik.handleSubmit}
@@ -141,6 +149,22 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
               max="2018-12-31"
             />
           </label>
+        </div>
+        <div className="user__info">
+          <label className="user__title">
+            Credit card
+            <input
+              id="credit"
+              name="credit"
+              type="text"
+              onChange={formik.handleChange}
+              value={formik.values.credit}
+              className="user__data"
+            />
+          </label>
+          {formik.errors.credit && (
+            <ErrorMessage>{formik.errors.credit}</ErrorMessage>
+          )}
         </div>
         {isMainEditForm ? (
           <button

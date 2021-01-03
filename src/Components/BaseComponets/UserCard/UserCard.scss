@@ -7,7 +7,7 @@
   border-radius: $border-radius-s;
   width: calc(33.3% - 2 * #{$indent-m});
   min-width: 280px;
-  min-height: 480px;
+  min-height: 560px;
   overflow: hidden;
   box-shadow: 0 4px 8px $black-5, 0 0 0 1px $white-10 inset;
   position: relative;
@@ -63,6 +63,10 @@
     align-items: center;
     font-size: $font-xs;
     line-height: $lh-s;
+  }
+
+  &__info:first-of-type {
+    padding-top: $indent-l * 2;
   }
 
   &__info + &__info {

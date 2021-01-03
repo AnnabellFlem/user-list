@@ -28,6 +28,7 @@
     "@types/react-dom": "^16.9.5",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "@typescript-eslint/parser": "^2.24.0",
+    "card-validator": "^8.1.0",
     "classnames": "^2.2.6",
     "css-loader": "^5.0.0",
     "dotenv": "^8.2.0",

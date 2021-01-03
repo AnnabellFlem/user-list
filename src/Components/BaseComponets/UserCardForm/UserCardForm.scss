@@ -37,6 +37,11 @@
   }
 
   &__form {
+
+    &__info:first-of-type {
+      padding-top: 0;
+    }
+
     .user__data {
       margin: $indent-xs 0 $indent-xs $indent-s;
       padding: $indent-xxs $indent-xs;
