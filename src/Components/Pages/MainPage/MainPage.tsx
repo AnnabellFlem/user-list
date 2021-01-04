@@ -43,7 +43,6 @@ const MainPage = () => {
               newState.push({ ...items[key], id: key })
             })
           }
-          console.log(newState, '<<< items')
           setUserList(newState)
           setUserListDefault(newState)
         } else {

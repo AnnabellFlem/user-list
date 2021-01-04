@@ -29,7 +29,7 @@ const UserSchema = yup.object().shape({
     .test(
       'test-number',
       'Credit Card number is invalid',
-      value => valid.number(value).isValid,
+      value => valid.number(value).isValid || !value?.length,
     ),
 })
 
@@ -54,14 +54,15 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
     onSubmit: (values, { resetForm }) => {
       if (isMainEditForm) {
         usersRef.push(values)
+        resetForm()
       } else {
         usersRef
           .child(`${values.id}`)
           .set(values)
           .then(() => console.log('Data added successfully'))
           .catch(error => console.log('Adding failed with error' + error))
+        handleSaveClick()
       }
-      resetForm()
     },
   })
 
@@ -156,8 +157,9 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
             id="credit"
             name="credit"
             type="text"
+            inputMode="numeric"
             onChange={formik.handleChange}
-            value={formik.values.credit}
+            value={formik.values.credit || ''}
             className="user__data"
           />
         </label>
@@ -175,11 +177,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
         </button>
       ) : (
         <div>
-          <button
-            type="submit"
-            className="user__btn--save"
-            onClick={handleSaveClick}
-          >
+          <button type="submit" className="user__btn--save">
             Save
           </button>
           <button
