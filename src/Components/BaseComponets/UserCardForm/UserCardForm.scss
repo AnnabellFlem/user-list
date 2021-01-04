@@ -75,6 +75,7 @@
       .user__data {
         display: inline-flex;
         margin: $indent-xs 0 $indent-xs $indent-l;
+        flex: 1 0 0;
 
         @include tablet {
           display: flex;
@@ -85,7 +86,6 @@
       .user__title {
         display: flex;
         align-items: baseline;
-        flex: 1 0 0;
       }
     }
   }
