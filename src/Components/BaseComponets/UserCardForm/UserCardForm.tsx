@@ -12,8 +12,8 @@ import '../UserCardForm/UserCardForm.scss'
 
 const phoneRegExp = /^\+[(]\d{1,3}[)][ ]\d{3}-\d{3}-\d{2}-\d{2}$/
 const UserSchema = yup.object().shape({
-  name: yup.string().max(16).required(),
-  surname: yup.string().max(20).required(),
+  name: yup.string().max(16).required('Name is a required field'),
+  surname: yup.string().max(20).required('Surname is a required field'),
   email: yup
     .string()
     .email('Please enter your valid email')
@@ -38,6 +38,7 @@ type UserCardFormProps = {
   isMainEditForm?: boolean
   handleSaveClick?: () => void
   handleCancelClick?: () => void
+  handleNotification?: (str: string) => void
 }
 
 const UserCardForm: React.FC<UserCardFormProps> = ({
@@ -51,14 +52,17 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
     validationSchema: UserSchema,
     onSubmit: (values, { resetForm }) => {
       if (isMainEditForm) {
-        usersRef.push(values)
+        usersRef
+          .push(values)
+          .then(() => alert('User added successfully'))
+          .catch(() => alert('Adding failed, try again'))
         resetForm()
       } else {
         usersRef
           .child(`${values.id}`)
           .set(values)
-          .then(() => console.log('Data added successfully'))
-          .catch(error => console.log('Adding failed with error' + error))
+          .then(() => alert('User updated successfully'))
+          .catch(() => alert('Updating failed, try again'))
         if (handleSaveClick) {
           handleSaveClick()
         }
