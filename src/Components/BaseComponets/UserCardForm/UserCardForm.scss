@@ -37,7 +37,6 @@
   }
 
   &__form {
-
     &__info:first-of-type {
       padding-top: 0;
     }
@@ -86,6 +85,7 @@
       .user__title {
         display: flex;
         align-items: baseline;
+        flex: 1 0 0;
       }
     }
   }
