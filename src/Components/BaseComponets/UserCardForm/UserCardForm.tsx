@@ -36,7 +36,6 @@ const UserSchema = yup.object().shape({
 type UserCardFormProps = {
   user?: User
   isMainEditForm?: boolean
-  handleCreateClick?: () => void
   handleSaveClick?: () => void
   handleCancelClick?: () => void
 }
@@ -44,7 +43,6 @@ type UserCardFormProps = {
 const UserCardForm: React.FC<UserCardFormProps> = ({
   user,
   isMainEditForm,
-  handleCreateClick,
   handleSaveClick,
   handleCancelClick,
 }) => {
@@ -170,11 +168,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
         )}
       </div>
       {isMainEditForm ? (
-        <button
-          type="submit"
-          className="user__btn--create"
-          onClick={handleCreateClick}
-        >
+        <button type="submit" className="user__btn--create">
           Create
         </button>
       ) : (

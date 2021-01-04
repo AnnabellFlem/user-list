@@ -28,10 +28,6 @@ const UserCardWrapper: React.FC<UserCardWrapperProps> = ({
     setUserForm(false)
   }
 
-  const handleCreateClick = () => {
-    setUserForm(true)
-  }
-
   const isMainEditForm = (formType: string) => {
     return editFormType === formType
   }
@@ -48,9 +44,7 @@ const UserCardWrapper: React.FC<UserCardWrapperProps> = ({
         </li>
       )
     } else if (isMainEditForm(MAIN_EDIT_FORM_TYPE)) {
-      return (
-        <UserCardForm isMainEditForm handleCreateClick={handleCreateClick} />
-      )
+      return <UserCardForm isMainEditForm />
     } else {
       return (
         <UserCard
