@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="Added fixes to card styles" />
+    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="fixed Form Wrapper creating new users">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +57,7 @@
       <recent name="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.&lt;MainPage /&gt; test.should to match snapshot">
+  <component name="RunManager" selected="Jest.UserCard test.Component should render elements with only required fields">
     <configuration name="App test.should to match snapshot" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -68,17 +72,45 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="&lt;MainPage /&gt; test.Should render main with children" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="UserCard test.Component should render ${&#10;    Object.keys(mockedData).length - 1&#10;  } elements when all data passed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.test.tsx" />
       <test-names>
-        <test-name value="&lt;MainPage /&gt; test" />
-        <test-name value="Should render main with children" />
+        <test-name value="UserCard test" />
+        <test-name value="Component should render ${&#10;    Object.keys(mockedData).length - 1&#10;  } elements when all data passed" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserCard test.Component should render ${&#10;    Object.keys(mockedData).length - 1&#10;  } elements when only required data passed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.test.tsx" />
+      <test-names>
+        <test-name value="UserCard test" />
+        <test-name value="Component should render ${&#10;    Object.keys(mockedData).length - 1&#10;  } elements when only required data passed" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserCard test.Component should render elements with only required fields" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.test.tsx" />
+      <test-names>
+        <test-name value="UserCard test" />
+        <test-name value="Component should render elements with only required fields" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -96,41 +128,13 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="getRandomId test.Function should return _" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Utils/__tests__/getRandomId.test.ts" />
-      <test-names>
-        <test-name value="getRandomId test" />
-        <test-name value="Function should return _" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="getRandomId test.Function should return form" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Utils/__tests__/getRandomId.test.ts" />
-      <test-names>
-        <test-name value="getRandomId test" />
-        <test-name value="Function should return form" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.UserCard test.Component should render elements with only required fields" />
+        <item itemvalue="Jest.UserCard test.Component should render ${&#10;    Object.keys(mockedData).length - 1&#10;  } elements when only required data passed" />
+        <item itemvalue="Jest.UserCard test.Component should render ${&#10;    Object.keys(mockedData).length - 1&#10;  } elements when all data passed" />
         <item itemvalue="Jest.&lt;MainPage /&gt; test.should to match snapshot" />
         <item itemvalue="Jest.App test.should to match snapshot" />
-        <item itemvalue="Jest.&lt;MainPage /&gt; test.Should render main with children" />
-        <item itemvalue="Jest.getRandomId test.Function should return _" />
-        <item itemvalue="Jest.getRandomId test.Function should return form" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +154,9 @@
       <workItem from="1609399908800" duration="24165000" />
       <workItem from="1609501197788" duration="15744000" />
       <workItem from="1609669615583" duration="29554000" />
-      <workItem from="1609744155258" duration="773000" />
+      <workItem from="1609744155258" duration="11397000" />
+      <workItem from="1609757978391" duration="112000" />
+      <workItem from="1609762649844" duration="731000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1609246217609</created>
@@ -299,7 +305,49 @@
       <option name="project" value="LOCAL" />
       <updated>1609744874735</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added fixes to card styles">
+      <created>1609745100819</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1609745100819</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added fixes to card styles align">
+      <created>1609745530063</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1609745530063</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added fixed for User form and card">
+      <created>1609748608891</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1609748608891</updated>
+    </task>
+    <task id="LOCAL-00025" summary="updated test for UserCard.test.tsx">
+      <created>1609749268986</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1609749268986</updated>
+    </task>
+    <task id="LOCAL-00026" summary="updated types in components">
+      <created>1609751050586</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1609751050586</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fixed Form Wrapper creating new users">
+      <created>1609752578603</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1609752578603</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,8 +366,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="project init" />
-    <MESSAGE value="added configs" />
     <MESSAGE value="init project" />
     <MESSAGE value="added user card" />
     <MESSAGE value="added main page with used cards and basic form" />
@@ -340,7 +386,12 @@
     <MESSAGE value="added payment card validation" />
     <MESSAGE value="added tests" />
     <MESSAGE value="Added fixes to card styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added fixes to card styles" />
+    <MESSAGE value="Added fixes to card styles align" />
+    <MESSAGE value="Added fixed for User form and card" />
+    <MESSAGE value="updated test for UserCard.test.tsx" />
+    <MESSAGE value="updated types in components" />
+    <MESSAGE value="fixed Form Wrapper creating new users" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed Form Wrapper creating new users" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
