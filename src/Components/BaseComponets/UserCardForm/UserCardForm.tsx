@@ -39,6 +39,7 @@ type UserCardFormProps = {
   handleSaveClick?: () => void
   handleCancelClick?: () => void
   handleNotification?: (str: string) => void
+  handleFormMessage: any
 }
 
 const UserCardForm: React.FC<UserCardFormProps> = ({
@@ -46,23 +47,35 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
   isMainEditForm,
   handleSaveClick,
   handleCancelClick,
+  handleFormMessage,
 }) => {
   const formik = useFormik({
     initialValues: user || initialUserValues,
     validationSchema: UserSchema,
     onSubmit: (values, { resetForm }) => {
       if (isMainEditForm) {
+        let isEmailDataInDB = false
         usersRef
-          .push(values)
-          .then(() => alert('User added successfully'))
-          .catch(() => alert('Adding failed, try again'))
-        resetForm()
+          .orderByChild('email')
+          .equalTo(values.email)
+          .on('value', snapshot => {
+            if (snapshot.val() !== null) {
+              isEmailDataInDB = true
+              handleFormMessage('Email already exists')
+            }
+          })
+        if (!isEmailDataInDB) {
+          usersRef
+            .push(values)
+            .then(() => handleFormMessage('User added successfully', true))
+            .catch(() => handleFormMessage('Adding failed, try again'))
+          resetForm()
+        }
       } else {
         usersRef
           .child(`${values.id}`)
           .set(values)
-          .then(() => alert('User updated successfully'))
-          .catch(() => alert('Updating failed, try again'))
+          .catch(() => handleFormMessage('Updating failed, try again'))
         if (handleSaveClick) {
           handleSaveClick()
         }

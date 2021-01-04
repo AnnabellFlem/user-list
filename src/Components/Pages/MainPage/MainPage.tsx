@@ -9,11 +9,17 @@ import usePagination from '../../../Hooks/usePagination'
 import { usersRef } from '../../../Services/firebase'
 import './MainPage.scss'
 
+type Message = {
+  text: string
+  isSuccess: boolean
+}
+
 const MainPage = () => {
   const [filterInput, setFilterInput] = useState('')
   const [userListDefault, setUserListDefault] = useState<User[]>([])
   const [userList, setUserList] = useState<User[]>([])
   const [currentPage, setCurrentPage] = useState(1)
+  const [message, setMessage] = useState<Message>()
 
   const count = Math.ceil(userList.length / PER_PAGE)
   const _DATA = usePagination(userList, PER_PAGE)
@@ -21,6 +27,10 @@ const MainPage = () => {
   const handleChange = (e: React.ChangeEvent<unknown>, page: number) => {
     setCurrentPage(page)
     return _DATA?.jump(page)
+  }
+
+  const handleFormMessage = (text: string, isSuccess = false) => {
+    return setMessage({ text, isSuccess })
   }
 
   const updateInput = (input: string) => {
@@ -56,10 +66,33 @@ const MainPage = () => {
     )
   }, [])
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (message?.isSuccess) {
+        setMessage(undefined)
+      }
+    }, 3000)
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [message])
+
   return (
     <main>
       <Filter input={filterInput} onChange={updateInput} />
-      <UserCardWrapper editFormType={MAIN_EDIT_FORM_TYPE} />
+      <UserCardWrapper
+        handleFormMessage={handleFormMessage}
+        editFormType={MAIN_EDIT_FORM_TYPE}
+      />
+      {message?.text && (
+        <span
+          className={`message ${
+            message.isSuccess ? 'message--success' : 'message--error'
+          }`}
+        >
+          {message.text}
+        </span>
+      )}
       <ul className="list">
         {_DATA?.currentData().map(user => (
           <UserCardWrapper key={user.id} user={user} />

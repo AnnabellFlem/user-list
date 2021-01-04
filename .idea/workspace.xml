@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/_colors.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,21 +68,7 @@
       <recent name="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.UserCard test.Component should render elements with only required fields">
-    <configuration name="App test.should to match snapshot" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/Components/App/App.test.tsx" />
-      <test-names>
-        <test-name value="App test" />
-        <test-name value="should to match snapshot" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.start">
     <configuration name="UserCard test.Component should render ${&#10;    Object.keys(mockedData).length - 1&#10;  } elements when all data passed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -137,13 +125,23 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="Jest.UserCard test.Component should render elements with only required fields" />
         <item itemvalue="Jest.UserCard test.Component should render ${&#10;    Object.keys(mockedData).length - 1&#10;  } elements when only required data passed" />
         <item itemvalue="Jest.UserCard test.Component should render ${&#10;    Object.keys(mockedData).length - 1&#10;  } elements when all data passed" />
         <item itemvalue="Jest.&lt;MainPage /&gt; test.should to match snapshot" />
-        <item itemvalue="Jest.App test.should to match snapshot" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +163,8 @@
       <workItem from="1609669615583" duration="29554000" />
       <workItem from="1609744155258" duration="11397000" />
       <workItem from="1609757978391" duration="112000" />
-      <workItem from="1609762649844" duration="7487000" />
+      <workItem from="1609762649844" duration="10358000" />
+      <workItem from="1609774981608" duration="7044000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1609246217609</created>
@@ -363,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609763408798</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="added fixes in validation messages and output info about submitting">
+      <created>1609770792228</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1609770792228</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +388,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added user card" />
     <MESSAGE value="added main page with used cards and basic form" />
     <MESSAGE value="Added filter for List" />
     <MESSAGE value="added Header and Footer elements, icons and styles" />
@@ -407,7 +412,8 @@
     <MESSAGE value="updated types in components" />
     <MESSAGE value="fixed Form Wrapper creating new users" />
     <MESSAGE value="updated name for project and readme description" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated name for project and readme description" />
+    <MESSAGE value="added fixes in validation messages and output info about submitting" />
+    <option name="LAST_COMMIT_MESSAGE" value="added fixes in validation messages and output info about submitting" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

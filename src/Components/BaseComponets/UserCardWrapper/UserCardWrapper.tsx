@@ -8,11 +8,13 @@ import { initialUserValues } from '../../../Utils/getInitialUserData'
 type UserCardWrapperProps = Partial<{
   user: User
   editFormType: string
+  handleFormMessage: (text: string, isSuccess?: boolean) => void
 }>
 
 const UserCardWrapper: React.FC<UserCardWrapperProps> = ({
   user,
   editFormType,
+  handleFormMessage,
 }) => {
   const [userForm, setUserForm] = useState<boolean>()
 
@@ -40,11 +42,14 @@ const UserCardWrapper: React.FC<UserCardWrapperProps> = ({
             user={user}
             handleSaveClick={handleSaveClick}
             handleCancelClick={handleCancelClick}
+            handleFormMessage={handleFormMessage}
           />
         </li>
       )
     } else if (isMainEditForm(MAIN_EDIT_FORM_TYPE)) {
-      return <UserCardForm isMainEditForm />
+      return (
+        <UserCardForm isMainEditForm handleFormMessage={handleFormMessage} />
+      )
     } else {
       return (
         <UserCard

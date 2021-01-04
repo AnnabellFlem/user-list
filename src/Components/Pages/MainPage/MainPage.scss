@@ -1,4 +1,5 @@
 @import 'src/Styles/sizes';
+@import 'src/Styles/colors';
 
 .list {
   display: flex;
@@ -11,4 +12,17 @@
   margin: $indent-l 0;
   display: flex;
   justify-content: center;
+}
+
+.message {
+  font-size: $font-xs;
+  line-height: $lh-s;
+
+  &.message--success {
+    color: $success;
+  }
+
+  &.message--error {
+    color: $error;
+  }
 }
