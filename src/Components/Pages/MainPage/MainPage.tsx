@@ -18,7 +18,7 @@ const MainPage = () => {
   const count = Math.ceil(userList.length / PER_PAGE)
   const _DATA = usePagination(userList, PER_PAGE)
 
-  const handleChange = (e: any, page: number) => {
+  const handleChange = (e: React.ChangeEvent<unknown>, page: number) => {
     setCurrentPage(page)
     return _DATA?.jump(page)
   }

@@ -36,9 +36,9 @@ const UserSchema = yup.object().shape({
 type UserCardFormProps = {
   user?: User
   isMainEditForm?: boolean
-  handleCreateClick?: any
-  handleSaveClick?: any
-  handleCancelClick?: any
+  handleCreateClick?: () => void
+  handleSaveClick?: () => void
+  handleCancelClick?: () => void
 }
 
 const UserCardForm: React.FC<UserCardFormProps> = ({
@@ -61,7 +61,9 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
           .set(values)
           .then(() => console.log('Data added successfully'))
           .catch(error => console.log('Adding failed with error' + error))
-        handleSaveClick()
+        if (handleSaveClick) {
+          handleSaveClick()
+        }
       }
     },
   })

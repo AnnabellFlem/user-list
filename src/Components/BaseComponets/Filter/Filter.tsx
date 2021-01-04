@@ -3,7 +3,7 @@ import './Filter.scss'
 
 type FilterProps = {
   input: string
-  onChange: any
+  onChange: (e: string) => void
 }
 
 const Filter: React.FC<FilterProps> = ({

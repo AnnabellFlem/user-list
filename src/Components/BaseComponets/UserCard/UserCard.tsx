@@ -4,7 +4,7 @@ import './UserCard.scss'
 
 type UserCardProps = {
   user: User
-  handleClick: any
+  handleClick: () => void
 }
 
 const UserCard: React.FC<UserCardProps> = ({ user, handleClick }) => {
