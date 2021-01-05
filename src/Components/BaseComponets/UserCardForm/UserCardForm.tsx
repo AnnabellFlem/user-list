@@ -57,11 +57,9 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
         usersRef
           .orderByChild('email')
           .equalTo(values.email)
-          .on('value', snapshot => {
-            console.log(snapshot.val())
+          .once('value', snapshot => {
             if (snapshot.val() !== null) {
               isEmailDataInDB = true
-              console.log(snapshot.val(), '222')
               handleFormMessage({
                 text: 'Email already exists',
                 isSuccess: false,
