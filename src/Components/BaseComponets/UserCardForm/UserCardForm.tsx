@@ -39,7 +39,7 @@ type UserCardFormProps = {
   handleSaveClick?: () => void
   handleCancelClick?: () => void
   handleNotification?: (str: string) => void
-  handleFormMessage: any
+  handleFormMessage: (text: string, isSuccess?: boolean) => void
 }
 
 const UserCardForm: React.FC<UserCardFormProps> = ({
