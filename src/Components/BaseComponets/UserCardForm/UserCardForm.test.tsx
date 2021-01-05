@@ -12,11 +12,15 @@ const mockedData = {
   credit: 'credit',
 }
 
+const handleFormMessage = jest.fn()
+
 describe('UserCardForm test', () => {
   let wrapper: any
 
   beforeAll(() => {
-    wrapper = shallow(<UserCardForm user={mockedData} />)
+    wrapper = shallow(
+      <UserCardForm handleFormMessage={handleFormMessage} user={mockedData} />,
+    )
   })
 
   it('should to match snapshot', () => {

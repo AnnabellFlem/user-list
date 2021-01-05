@@ -14,12 +14,17 @@ type Message = {
   isSuccess: boolean
 }
 
+const initialMessage = {
+  text: '',
+  isSuccess: false,
+}
+
 const MainPage = () => {
   const [filterInput, setFilterInput] = useState('')
   const [userListDefault, setUserListDefault] = useState<User[]>([])
   const [userList, setUserList] = useState<User[]>([])
   const [currentPage, setCurrentPage] = useState(1)
-  const [message, setMessage] = useState<Message>()
+  const [message, setMessage] = useState<Message>(initialMessage)
 
   const count = Math.ceil(userList.length / PER_PAGE)
   const _DATA = usePagination(userList, PER_PAGE)
@@ -69,7 +74,7 @@ const MainPage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (message?.isSuccess) {
-        setMessage(undefined)
+        setMessage(initialMessage)
       }
     }, 3000)
     return () => {
@@ -95,7 +100,11 @@ const MainPage = () => {
       )}
       <ul className="list">
         {_DATA?.currentData().map(user => (
-          <UserCardWrapper key={user.id} user={user} />
+          <UserCardWrapper
+            key={user.id}
+            user={user}
+            handleFormMessage={handleFormMessage}
+          />
         ))}
       </ul>
       <Pagination

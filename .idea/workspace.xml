@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="updated name for project and readme description">
+    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="updated snaps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/_colors.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +162,9 @@
       <workItem from="1609744155258" duration="11397000" />
       <workItem from="1609757978391" duration="112000" />
       <workItem from="1609762649844" duration="10358000" />
-      <workItem from="1609774981608" duration="7044000" />
+      <workItem from="1609774981608" duration="7113000" />
+      <workItem from="1609830625727" duration="494000" />
+      <workItem from="1609831130691" duration="784000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1609246217609</created>
@@ -369,7 +369,28 @@
       <option name="project" value="LOCAL" />
       <updated>1609770792228</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="added message info">
+      <created>1609796398818</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1609796398818</updated>
+    </task>
+    <task id="LOCAL-00031" summary="updated snaps">
+      <created>1609796438688</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1609796438688</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fixed types">
+      <created>1609830827890</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1609830827890</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,9 +409,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added main page with used cards and basic form" />
-    <MESSAGE value="Added filter for List" />
-    <MESSAGE value="added Header and Footer elements, icons and styles" />
     <MESSAGE value="updated styles" />
     <MESSAGE value="added adaptive card view" />
     <MESSAGE value="added styles for form" />
@@ -413,7 +431,10 @@
     <MESSAGE value="fixed Form Wrapper creating new users" />
     <MESSAGE value="updated name for project and readme description" />
     <MESSAGE value="added fixes in validation messages and output info about submitting" />
-    <option name="LAST_COMMIT_MESSAGE" value="added fixes in validation messages and output info about submitting" />
+    <MESSAGE value="added message info" />
+    <MESSAGE value="updated snaps" />
+    <MESSAGE value="fixed types" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed types" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

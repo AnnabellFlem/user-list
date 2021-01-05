@@ -8,8 +8,7 @@ import { initialUserValues } from '../../../Utils/getInitialUserData'
 type UserCardWrapperProps = Partial<{
   user: User
   editFormType: string
-  handleFormMessage: (text: string, isSuccess?: boolean) => void
-}>
+}> & { handleFormMessage: (text: string, isSuccess?: boolean) => void }
 
 const UserCardWrapper: React.FC<UserCardWrapperProps> = ({
   user,

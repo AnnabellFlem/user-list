@@ -33,14 +33,13 @@ const UserSchema = yup.object().shape({
     ),
 })
 
-type UserCardFormProps = {
-  user?: User
-  isMainEditForm?: boolean
-  handleSaveClick?: () => void
-  handleCancelClick?: () => void
-  handleNotification?: (str: string) => void
-  handleFormMessage: (text: string, isSuccess?: boolean) => void
-}
+type UserCardFormProps = Partial<{
+  user: User
+  isMainEditForm: boolean
+  handleSaveClick: () => void
+  handleCancelClick: () => void
+  handleNotification: (str: string) => void
+}> & { handleFormMessage: (text: string, isSuccess?: boolean) => void }
 
 const UserCardForm: React.FC<UserCardFormProps> = ({
   user,

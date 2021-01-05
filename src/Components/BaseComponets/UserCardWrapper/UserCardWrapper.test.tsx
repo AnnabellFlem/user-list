@@ -13,11 +13,18 @@ const mockedData = {
   credit: 'credit',
 }
 
+const handleFormMessage = jest.fn()
+
 describe('UserCardWrapper test', () => {
   let wrapper: any
 
   beforeAll(() => {
-    wrapper = shallow(<UserCardWrapper user={mockedData} />)
+    wrapper = shallow(
+      <UserCardWrapper
+        handleFormMessage={handleFormMessage}
+        user={mockedData}
+      />,
+    )
   })
 
   it('should to match snapshot', () => {
@@ -30,7 +37,11 @@ describe('UserCardWrapper test', () => {
 
   it('Component should render UserFormCard', () => {
     wrapper = shallow(
-      <UserCardWrapper user={mockedData} editFormType={MAIN_EDIT_FORM_TYPE} />,
+      <UserCardWrapper
+        handleFormMessage={handleFormMessage}
+        user={mockedData}
+        editFormType={MAIN_EDIT_FORM_TYPE}
+      />,
     )
     expect(wrapper.find('UserCardForm')).toHaveLength(1)
   })
