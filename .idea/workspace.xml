@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="updated snaps">
+    <list default="true" id="485c1e1f-d91d-4433-9383-66e6be105a78" name="Default Changelist" comment="updated git ignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCard/UserCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardForm/UserCardForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BaseComponets/UserCardWrapper/UserCardWrapper.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Pages/MainPage/MainPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hooks/usePagination.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hooks/usePagination.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Types/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +167,7 @@
       <workItem from="1609762649844" duration="10358000" />
       <workItem from="1609774981608" duration="7113000" />
       <workItem from="1609830625727" duration="494000" />
-      <workItem from="1609831130691" duration="784000" />
+      <workItem from="1609831130691" duration="3591000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1609246217609</created>
@@ -390,7 +393,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609830827890</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="updated types, tests">
+      <created>1609832184934</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1609832184934</updated>
+    </task>
+    <task id="LOCAL-00034" summary="updated git ignore">
+      <created>1609832336620</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1609832336620</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,8 +426,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated styles" />
-    <MESSAGE value="added adaptive card view" />
     <MESSAGE value="added styles for form" />
     <MESSAGE value="added error message component, updated styles" />
     <MESSAGE value="added pagination, updated styles" />
@@ -434,7 +449,9 @@
     <MESSAGE value="added message info" />
     <MESSAGE value="updated snaps" />
     <MESSAGE value="fixed types" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed types" />
+    <MESSAGE value="updated types, tests" />
+    <MESSAGE value="updated git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated git ignore" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

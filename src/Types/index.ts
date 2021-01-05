@@ -7,3 +7,8 @@ export type User = {
   birthday: string
   credit: string
 }
+
+export type Message = {
+  text: string
+  isSuccess: boolean | undefined
+}

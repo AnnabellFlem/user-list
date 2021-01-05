@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import UserCardWrapper from '../../BaseComponets/UserCardWrapper'
 import { mockData } from '../../../Services/mockedData'
-import { User } from '../../../Types/User'
+import { Message, User } from '../../../Types'
 import Filter from '../../BaseComponets/Filter'
 import { MAIN_EDIT_FORM_TYPE, PER_PAGE } from '../../../Constants/User'
 import { Pagination } from '@material-ui/lab'
@@ -9,14 +9,9 @@ import usePagination from '../../../Hooks/usePagination'
 import { usersRef } from '../../../Services/firebase'
 import './MainPage.scss'
 
-type Message = {
-  text: string
-  isSuccess: boolean
-}
-
 const initialMessage = {
   text: '',
-  isSuccess: false,
+  isSuccess: undefined,
 }
 
 const MainPage = () => {
@@ -34,7 +29,7 @@ const MainPage = () => {
     return _DATA?.jump(page)
   }
 
-  const handleFormMessage = (text: string, isSuccess = false) => {
+  const handleFormMessage = ({ text, isSuccess }: Message) => {
     return setMessage({ text, isSuccess })
   }
 

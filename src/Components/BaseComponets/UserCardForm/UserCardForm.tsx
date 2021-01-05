@@ -2,7 +2,7 @@ import React from 'react'
 import { useFormik } from 'formik'
 import * as yup from 'yup'
 import valid from 'card-validator'
-import { User } from '../../../Types/User'
+import { Message, User } from '../../../Types'
 import { initialUserValues } from '../../../Utils/getInitialUserData'
 import ErrorMessage from '../ErrorMessage'
 import { usersRef } from '../../../Services/firebase'
@@ -39,7 +39,7 @@ type UserCardFormProps = Partial<{
   handleSaveClick: () => void
   handleCancelClick: () => void
   handleNotification: (str: string) => void
-}> & { handleFormMessage: (text: string, isSuccess?: boolean) => void }
+}> & { handleFormMessage: ({ text, isSuccess }: Message) => void }
 
 const UserCardForm: React.FC<UserCardFormProps> = ({
   user,
@@ -58,23 +58,43 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
           .orderByChild('email')
           .equalTo(values.email)
           .on('value', snapshot => {
+            console.log(snapshot.val())
             if (snapshot.val() !== null) {
               isEmailDataInDB = true
-              handleFormMessage('Email already exists')
+              console.log(snapshot.val(), '222')
+              handleFormMessage({
+                text: 'Email already exists',
+                isSuccess: false,
+              })
             }
           })
         if (!isEmailDataInDB) {
           usersRef
             .push(values)
-            .then(() => handleFormMessage('User added successfully', true))
-            .catch(() => handleFormMessage('Adding failed, try again'))
+            .then(() =>
+              handleFormMessage({
+                text: 'User added successfully',
+                isSuccess: true,
+              }),
+            )
+            .catch(() =>
+              handleFormMessage({
+                text: 'Adding failed, try again',
+                isSuccess: false,
+              }),
+            )
           resetForm()
         }
       } else {
         usersRef
           .child(`${values.id}`)
           .set(values)
-          .catch(() => handleFormMessage('Updating failed, try again'))
+          .catch(() =>
+            handleFormMessage({
+              text: 'Updating failed, try again',
+              isSuccess: false,
+            }),
+          )
         if (handleSaveClick) {
           handleSaveClick()
         }

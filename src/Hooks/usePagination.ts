@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { User } from '../Types/User'
+import { User } from '../Types'
 
 const usePagination = (data: User[], itemsPerPage: number) => {
   const [currentPage, setCurrentPage] = useState(1)
