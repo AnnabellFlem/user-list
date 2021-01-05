@@ -160,6 +160,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
             id="phone"
             name="phone"
             type="tel"
+            inputMode="numeric"
             onChange={formik.handleChange}
             value={formik.values.phone}
             className="user__data"
