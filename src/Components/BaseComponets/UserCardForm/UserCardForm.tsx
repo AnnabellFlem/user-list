@@ -61,7 +61,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
             if (snapshot.val() !== null) {
               isEmailDataInDB = true
               handleFormMessage({
-                text: 'Email already exists',
+                text: 'User with this email already exists',
                 isSuccess: false,
               })
             }
@@ -159,7 +159,7 @@ const UserCardForm: React.FC<UserCardFormProps> = ({
           <input
             id="phone"
             name="phone"
-            type="tel"
+            type="text"
             inputMode="numeric"
             onChange={formik.handleChange}
             value={formik.values.phone}
