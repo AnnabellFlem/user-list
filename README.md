@@ -18,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [React](https://reactjs.org/) - a JavaScript library for building user interfaces
 - [TypeScript](https://www.typescriptlang.org/) - open-source language which builds on JavaScript
 - [Scss](https://sass-lang.com/documentation) - stylesheet language
-- [Firebase](https://firebase.google.com/) - backed by Google
+- [Firebase](https://firebase.google.com/) - backend by Google
 - [braintree/card-validator](https://github.com/braintree/card-validator) - credit card validator
 
 ### Prerequisites
